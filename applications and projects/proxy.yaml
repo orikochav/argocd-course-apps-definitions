@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-proxy-config
+  namespace: argocd
+data:
+  HTTP_PROXY: "http://genproxy.corp.amdocs.com:8080"
+  HTTPS_PROXY: "http://genproxy.corp.amdocs.com:8080"
+  NO_PROXY: "localhost,kubernetes.docker.internal"
