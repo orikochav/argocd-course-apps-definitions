@@ -9,7 +9,7 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source:
-    path: helm-guestbook
+    path: guestbook-with-sub-directories
     repoURL: "https://github.com/orikochav/argocd-example-apps.git"
     targetRevision: master
     helm:
